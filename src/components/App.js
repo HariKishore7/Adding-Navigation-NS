@@ -4,26 +4,24 @@ import '../styles/App.css';
 
 class App extends Component {
     render() {
-
         return(
             <div id="main">
                {/* Do not remove the main div */}
                <BrowserRouter>
                <LocationDisplay/>
-               <link to="/">Home</link>
-               <link to="/about">About</link>
+               <Link to="/">Home</Link>
+               <Link to="/about">About</Link>
                <Switch>         
-               <div>You are on the about page</div>               
-               <Route exact path="/about">
-                       <div>You are on the about page</div>
-                   </Route>
-                   <Route exact path="/">
-                       <Home/>
-                   </Route>
-                   
-                   <Route path="*">
-                       <div>No match</div>
-                   </Route>
+                <div>You are on the about page</div>               
+                <Route exact path="/about">
+                        <div>You are on the about page</div>
+                    </Route>
+                    <Route exact path="/">
+                        <Home/>
+                    </Route>                   
+                    <Route path="*">
+                        <div>No match</div>
+                    </Route>
                </Switch>
                </BrowserRouter>
             </div>

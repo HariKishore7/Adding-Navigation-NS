@@ -11,8 +11,7 @@ class App extends Component {
                <LocationDisplay/>
                <Link to="/">Home</Link>
                <Link to="/about">About</Link>
-               <Switch>         
-                <div>You are on the about page</div>               
+               <Switch>                                       
                 <Route exact path="/about">
                         <div>You are on the about page</div>
                     </Route>
